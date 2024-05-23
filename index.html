@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>非エンジニア向けにReveal.jsとChatGPTを使ってプレゼン資料を作りましょう</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reset.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/white.min.css">
+  <style>
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+    }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <!-- Slide 1: Title -->
+      <section>
+        <h1>非エンジニア向けにReveal.jsとChatGPTを使って<br>プレゼン資料を作りましょう</h1>
+        <p>100万円の価値があるプレゼンテーション</p>
+        <img src="https://source.unsplash.com/1600x900/?presentation,technology" alt="Title Image">
+      </section>
+
+      <!-- Slide 2: Introduction -->
+      <section>
+        <h2>イントロダクション</h2>
+        <p>Reveal.jsとは？ChatGPTとは？</p>
+        <p>これらを使う理由を簡単に説明します。</p>
+        <img src="https://source.unsplash.com/1600x900/?introduction,lightbulb" alt="Introduction Image">
+      </section>
+
+      <!-- Slide 3: Reveal.js Features -->
+      <section>
+        <h2>Reveal.jsの特徴</h2>
+        <ul>
+          <li>簡単に使用できるプレゼンテーションフレームワーク</li>
+          <li>HTMLを使用して美しいスライドを作成可能</li>
+          <li>豊富なアニメーションとレイアウトオプション</li>
+        </ul>
+        <img src="https://source.unsplash.com/1600x900/?slides,animation" alt="Reveal.js Features">
+      </section>
+
+      <!-- Slide 4: ChatGPT Features -->
+      <section>
+        <h2>ChatGPTの魅力</h2>
+        <ul>
+          <li>自然言語処理を利用した高度なテキスト生成</li>
+          <li>様々なニーズに対応可能な柔軟性</li>
+          <li>コードやプレゼンテーション資料の作成支援</li>
+        </ul>
+        <img src="https://source.unsplash.com/1600x900/?AI,technology" alt="ChatGPT Features">
+      </section>
+
+      <!-- Slide 5: Basic Reveal.js Code -->
+      <section>
+        <h2>Reveal.jsの基本コード</h2>
+        <pre><code class="html">
+          &lt;!DOCTYPE html&gt;
+          &lt;html&gt;
+          &lt;head&gt;
+            &lt;meta charset="utf-8"&gt;
+            &lt;title&gt;Reveal.js Example&lt;/title&gt;
+            &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reset.min.css"&gt;
+            &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css"&gt;
+            &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/white.min.css"&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+            &lt;div class="reveal"&gt;
+              &lt;div class="slides"&gt;
+                &lt;section&gt;
+                  &lt;h1&gt;Hello Reveal.js&lt;/h1&gt;
+                &lt;/section&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"&gt;&lt;/script&gt;
+            &lt;script&gt;
+              Reveal.initialize();
+            &lt;/script&gt;
+          &lt;/body&gt;
+          &lt;/html&gt;
+        </code></pre>
+      </section>
+
+      <!-- Slide 6: Advanced Animations -->
+      <section>
+        <h2>高度なアニメーション</h2>
+        <p>次のコードでスライドにアニメーションを追加できます：</p>
+        <pre><code class="html">
+          &lt;section data-transition="zoom"&gt;
+            &lt;h2&gt;ズームインアニメーション&lt;/h2&gt;
+          &lt;/section&gt;
+          &lt;section data-transition="fade"&gt;
+            &lt;h2&gt;フェードインアニメーション&lt;/h2&gt;
+          &lt;/section&gt;
+        </code></pre>
+        <img src="https://source.unsplash.com/1600x900/?animation,creative" alt="Animation">
+      </section>
+
+      <!-- Slide 7: ChatGPT Text Generation -->
+      <section>
+        <h2>ChatGPTでテキスト生成</h2>
+        <p>以下のようにテキスト生成を行います：</p>
+        <pre><code class="python">
+          import openai
+          openai.api_key = 'YOUR_API_KEY'
+          
+          response = openai.Completion.create(
+            engine="text-davinci-003",
+            prompt="非エンジニア向けにReveal.jsとChatGPTの使い方を説明してください。",
+            max_tokens=150
+          )
+          
+          print(response.choices[0].text.strip())
+        </code></pre>
+        <img src="https://source.unsplash.com/1600x900/?coding,AI" alt="ChatGPT Coding">
+      </section>
+
+      <!-- Slide 8: Example Slide -->
+      <section>
+        <h2>実際に作成したスライドの例</h2>
+        <iframe src="https://example.com/your-slide-presentation" style="width: 100%; height: 600px;"></iframe>
+        <p>上記は、Reveal.jsとChatGPTを用いて作成したプレゼンテーションの例です。</p>
+      </section>
+
+      <!-- Slide 9: Applications -->
+      <section>
+        <h2>応用例</h2>
+        <ul>
+          <li>ビジネスプレゼンテーション</li>
+          <li>教育用資料</li>
+          <li>マーケティングコンテンツ</li>
+        </ul>
+        <img src="https://source.unsplash.com/1600x900/?business,education" alt="Applications">
+      </section>
+
+      <!-- Slide 10: Conclusion and Q&A -->
+      <section>
+        <h2>まとめと質疑応答</h2>
+        <p>非エンジニアでも簡単に使えるReveal.jsとChatGPTの魅力を紹介しました。<br>ご質問があればどうぞ！</p>
+        <img src="https://source.unsplash.com/1600x900/?questions,discussion" alt="Q&A">
+      </section>
+    </div>
+  </div>
+
+  <script>
+    Reveal.initialize({
+      transition: 'slide', // none/fade/slide/convex/concave/zoom
+      backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+      parallaxBackgroundImage: 'https://source.unsplash.com/1600x900/?background', // Parallax background image
+      parallaxBackgroundSize: '2100px 900px', // CSS syntax, e.g. "2100px 900px"
+      dependencies: [
+        { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/markdown/markdown.min.js', async: true },
+        { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/highlight/highlight.min.js', async: true },
+        { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/notes/notes.min.js', async: true }
+      ]
+    });
+  </script>
+</body>
+</html>
